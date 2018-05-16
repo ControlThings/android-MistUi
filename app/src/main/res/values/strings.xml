@@ -1,0 +1,218 @@
+<resources>
+    <string name="app_name">Mist</string>
+
+    <string name="no_user">No user selected</string>
+    <string name="no_user_info">No user selected\n(add in users tab)</string>
+
+    <string name="one">One</string>
+    <string name="main_devices">Systems</string>
+    <string name="main_model">Model</string>
+    <string name="main_roles">Roles</string>
+    <string name="main_users">Users</string>
+    <string name="main_tags">Tags</string>
+    <string name="main_mappings">Mappings</string>
+    <string name="main_identitys">Identities</string>
+    <string name="main_snackbar_permission">"Please activate the required permission from\nSettings - Apps - Mist - Permissions"</string>
+
+    <string name="connect">Connect</string>
+    <string name="connect_localdiscovery">Nearby</string>
+    <string name="connect_directory">Catalogue</string>
+    <string name="connect_invite">Invites</string>
+    <string name="connect_wifi">Wi-Fi</string>
+    <string name="connect_commissioning">Commission</string>
+    <string name="connect_qr">Scan Qr</string>
+
+    <string name="system_system">System</string>
+    <string name="system_model">Model</string>
+    <string name="system_manage">Manage</string>
+    <string name="system_identities">Users</string>
+    <string name="system_manage_no_model">Unable to search in catalogue</string>
+    <string name="system_peer_offline">%1$s is offline</string>
+
+    <string name="manage_invite_expert_button">Invite</string>
+    <string name="manage_publish_button">Publish</string>
+
+    <string name="expert_experts">Experts</string>
+
+    <string name="manage_own">Own Identities</string>
+
+    <string name="users_own">My identities</string>
+    <string name="users_trusted">Trusted friends</string>
+    <string name="users_quarantined">Quarantined</string>
+
+    <string name="manual_commissioning_title">Select wifi for %1$s</string>
+
+    <string name="remote_user_identities">Identities on %1$s</string>
+    <string name="remote_user_friends">Friends of %1$s</string>
+    <string name="remote_user_quarantined">Quarantined on %1$s</string>
+
+    <string name="commissioning_divider_wld">Local Network</string>
+    <string name="commissioning_divider_wifi">Wi-Fi</string>
+    <string name="commissioning_identity_title">Select identity for</string>
+    <string name="commissioning_wifi_title">Select Wi-Fi network for</string>
+
+    <string name="endpoint_visualize">Visualize</string>
+    <string name="endpoint_mapping">Mappings</string>
+
+    <string name="advanced_native">Native</string>
+    <string name="advanced_cache">Cache</string>
+    <string name="advanced_connections">Connections</string>
+    <string name="advanced_html5">Html5</string>
+    <string name="advanced_settings_add">Add system</string>
+    <string name="advanced_settings_remove">Remove system</string>
+    <string name="advanced_settings_adddialog">Add %1$s to %2$s</string>
+    <string name="advanced_settings_remove_unknown">unrecognized system</string>
+
+    <string name="notification_friendrequest_title">%1$s sent %2$s an friend request</string>
+    <string name="notification_friendrequest_title_more">You have more than one friend request</string>
+    <string name="notification_friendrequest_text">Click to open</string>
+
+    <string name="directory_publish_dialog_title">Publish</string>
+    <string name="directory_publish_dialog_type_input">Type</string>
+    <string name="directory_publish_dialog_description_input">Description</string>
+    <string name="directory_publish_dialog_button_ok">Ok</string>
+    <string name="directory_publish_dialog_button_cancel">Cancel</string>
+    <string name="directory_publish_dialog_onOk">published to catalogue</string>
+    <string name="directory_publish_dialog_onErr">couldn\'t publish</string>
+
+    <string name="identity_dialog_title">Create identity</string>
+    <string name="identity_dialog_subtitle">Enter name</string>
+    <string name="identity_dialog_button_ok">Ok</string>
+    <string name="identity_dialog_button_cancel">Cancel</string>
+
+    <string name="download_app_dialog_title">Download a new app</string>
+    <string name="download_app_dialog_subtitle">Enter url</string>
+    <string name="download_app_dialog_button_ok">Ok</string>
+    <string name="download_app_dialog_button_cancel">Cancel</string>
+
+    <string name="identity_delete_dialog_title">Delete</string>
+    <string name="identity_delete_dialog_button_ok">Ok</string>
+    <string name="identity_delete_dialog_button_cancel">Cancel</string>
+
+    <string name="sandbox_allow_dialog_title">Send a Request?</string>
+    <string name="sandbox_allow_dialog_friend_request">Allow the %1$s app to request trust friendship?</string>
+    <string name="sandbox_allow_dialog_button_ok">Accept</string>
+    <string name="sandbox_allow_dialog_button_cancel">Cancel</string>
+
+    <string name="identity_import_dialog_title">Import identity</string>
+    <string name="identity_import_dialog_button_ok">Ok</string>
+    <string name="identity_import_dialog_button_cancel">Cancel</string>
+
+    <string name="identity_accept_friend_dialog_title">Accept %1$s as new friend</string>
+    <string name="identity_accept_friend_dialog_button_accept">Accept</string>
+    <string name="identity_accept_friend_dialog_button_decline">Decline</string>
+    <string name="identity_accept_friend_dialog_button_cancel">Cancel</string>
+
+    <string name="invite_friend_request_dialog_title">Received invitation from %1$s</string>
+    <string name="invite_friend_request_dialog_checkbox1">Connect to %1$s</string>
+    <string name="invite_friend_request_dialog_checkbox2">Connect to %1$s</string>
+    <string name="invite_friend_request_dialog_button_accept">Accept</string>
+    <string name="invite_friend_request_dialog_button_decline">Decline</string>
+    <string name="invite_friend_request_dialog_button_cancel">Cancel</string>
+
+    <string name="friend_request_dialog_title">Send friend request to</string>
+    <string name="friend_request_dialog_button_ok">Ok</string>
+    <string name="friend_request_dialog_button_cancel">Cancel</string>
+
+    <string name="about_dialog_title">About</string>
+    <string name="about_dialog_app_version">App:</string>
+    <string name="about_dialog_mist_version">MistApi:</string>
+    <string name="about_dialog_mistC99_version">Mist C99:</string>
+    <string name="about_dialog_wishC99_version">Wish C99:</string>
+    <string name="about_dialog_button">Close</string>
+
+    <string name="licenses_dialog_title">Open source licenses for components used by this application</string>
+    <string name="licenses_dialog_button">Close</string>
+
+    <string name="password_dialog_subtitle">Password</string>
+    <string name="password_dialog_button_ok">Ok</string>
+    <string name="password_dialog_button_cancel">Cancel</string>
+
+    <string name="sandbox_peers_list">Select peer</string>
+
+    <string name="settings_menu_advanced">Advanced</string>
+    <string name="settings_menu_about">About</string>
+    <string name="settings_menu_settings">Settings</string>
+    <string name="settings_menu_license">Legal notices</string>
+
+    <string name="advanced_title">Advanced</string>
+
+    <string name="settings_title">Settings</string>
+    <string name="settings_notifications">Notifications</string>
+    <string name="settings_rpc_errors">Send rpc errors</string>
+
+    <string name="mappings_dialog_title">Select source for %1$s</string>
+
+    <string name="rpc_error_dialog_title">Rpc error</string>
+    <string name="rpc_error_dialog_button_ok">Send</string>
+    <string name="rpc_error_dialog_button_cancel">Cancel</string>
+
+    <string name="commissioning_timeout_dialog_title">Timeout!</string>
+    <string name="commissioning_interrupted_dialog_title">Interrupted!</string>
+    <string name="commissioning_timeout_dialog_button_ok">Got it!</string>
+    <string name="commissioning_timeout_dialog_button_retry">Retry</string>
+
+    <string name="connect_sandbox_title">sandbox </string>
+
+    <string name="crash_dialog_text">An unexpected error occurred forcing the
+    application to stop. Please help us fix this by sending us error data,
+    all you have to do is click OK.</string>
+    <string name="crash_dialog_comment_prompt">You might add your comments about the problem below:</string>
+    <string name="crash_dialog_ok_toast">Thank you !</string>
+
+    <string name="wish_core_down">Wish core no longer running!</string>
+    <string name="wish_core_down_info">You should restart Wish core.</string>
+    <string name="wish_core_down_restart">Restart</string>
+
+    <string name="ON_START_COMMISSIONING">ON_START_COMMISSIONING</string>
+    <string name="ON_CANCELLED_BY_USER">ON_CANCELLED_BY_USER</string>
+    <string name="ON_TIMEOUT">ON_TIMEOUT</string>
+    <string name="ON_ERROR">ON_ERROR</string>
+    <string name="ON_WIFI_COMMISSIONING_CHOSEN">ON_WIFI_COMMISSIONING_CHOSEN</string>
+    <string name="ON_WIFI_OFF">ON_WIFI_OFF</string>
+    <string name="ON_WIFI_ENABLED">ON_WIFI_ENABLED</string>
+    <string name="ON_WIFI_ADD_FAIL">ON_WIFI_ADD_FAIL</string>
+    <string name="ON_CONNECTED_TO_EXPECTED_WIFI">ON_CONNECTED_TO_EXPECTED_WIFI</string>
+    <string name="ON_COMMISSIONING_WIFI_ALREADY_JOINED">ON_COMMISSIONING_WIFI_ALREADY_JOINED</string>
+    <string name="ON_WLD_CLEAR_CB">ON_WLD_CLEAR_CB</string>
+    <string name="ON_WLD_LIST_OK">ON_WLD_LIST_OK</string>
+    <string name="ON_WLD_COMMISIONING_CHOSEN">ON_WLD_COMMISIONING_CHOSEN</string>
+    <string name="ON_LOCAL_ID_CHOSEN">ON_LOCAL_ID_CHOSEN</string>
+    <string name="ON_LOCAL_ID_CHOSEN_CASE_WLD">ON_LOCAL_ID_CHOSEN_CASE_WLD</string>
+    <string name="ON_FRIEND_REQ_ACCEPTED">ON_FRIEND_REQ_ACCEPTED</string>
+    <string name="ON_DETECT_MIST_CONFIG_PEER">ON_DETECT_MIST_CONFIG_PEER</string>
+    <string name="ON_CLAIM_CLICKED">ON_CLAIM_CLICKED</string>
+    <string name="ON_MANAGE_CLAIM_CB_WIFI_COMMISSIONING">ON_MANAGE_CLAIM_CB_WIFI_COMMISSIONING</string>
+    <string name="ON_MANAGE_CLAIM_CB_WLD_COMMISSIONING">ON_MANAGE_CLAIM_CB_WLD_COMMISSIONING</string>
+    <string name="ON_WIFI_CONFIGURED">ON_WIFI_CONFIGURED</string>
+    <string name="ON_CONNECTED_TO_ORIGINAL_WIFI">ON_CONNECTED_TO_ORIGINAL_WIFI</string>
+    <string name="ON_COMMISSIONED_PEER_ONLINE">ON_COMMISSIONED_PEER_ONLINE</string>
+    <string name="ON_BACK_PRESSED">ON_BACK_PRESSED</string>
+    <string name="ON_END_COMMISSIONING">ON_END_COMMISSIONING</string>
+
+    <string name="INITIAL">INITIAL</string>
+    <string name="NO_CALLBACK_LISTENER">NO_CALLBACK_LISTENER</string>
+    <string name="WAIT_WLD_OR_WIFI_SELECT">WAIT_WLD_OR_WIFI_SELECT</string>
+    <string name="WAIT_JOIN_COMMISIONING_WIFI">WAIT_JOIN_COMMISIONING_WIFI</string>
+    <string name="WAIT_WIFI_ENABLED">WAIT_WIFI_ENABLED</string>
+    <string name="WAIT_WLD_CLEAR">WAIT_WLD_CLEAR</string>
+    <string name="WAIT_WLD_LIST">WAIT_WLD_LIST</string>
+    <string name="WAIT_SELECT_LOCAL_ID">WAIT_SELECT_LOCAL_ID</string>
+    <string name="WAIT_FRIEND_REQ_RESP">WAIT_FRIEND_REQ_RESP</string>
+    <string name="WAIT_FOR_PEERS">WAIT_FOR_PEERS</string>
+    <string name="WAIT_FOR_CLAIM_USER_DECISION">WAIT_FOR_CLAIM_USER_DECISION</string>
+    <string name="WAIT_MANAGE_CLAIM_CB">WAIT_MANAGE_CLAIM_CB</string>
+    <string name="WAIT_WIFI_CONFIG">WAIT_WIFI_CONFIG</string>
+    <string name="WAIT_JOIN_ORIGINAL_WIFI">WAIT_JOIN_ORIGINAL_WIFI</string>
+    <string name="WAIT_COMMISSIONED_PEER_ONLINE">WAIT_COMMISSIONED_PEER_ONLINE</string>
+    <string name="COMMISSIONING_FINISHED_FAIL">COMMISSIONING_FINISHED_FAIL</string>
+    <string name="COMMISSIONING_FINISHED_OK">COMMISSIONING_FINISHED_OK</string>
+    <string name="COMMISSIONING_ABORTED">COMMISSIONING_ABORTED</string>
+    <string name="WAIT_WLD_CHECK_CLAIMABLE">WAIT_WLD_CHECK_CLAIMABLE</string>
+
+
+    <string name="USER_MSG_ON_WIFI_OFF">Turn wifi on</string>
+    <string name="USER_MSG_WAIT_JOIN_COMMISIONING_WIFI">(check saved wifi networks)</string>
+    <string name="USER_MSG_CANNOT_ADD_WIFI">Try to remove the network from system wifi settings</string>
+
+</resources>

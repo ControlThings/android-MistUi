@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:animateLayoutChanges="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/list_item_customui_layout"
+        android:layout_width="match_parent"
+        android:layout_height="72dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="vertical"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:layout_toRightOf="@+id/list_item_customui_left_icon"
+            android:layout_toLeftOf="@+id/list_item_customui_right_icon">
+
+            <TextView
+                android:id="@+id/list_item_customui_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Title"
+                android:textSize="16sp"
+                />
+
+            <TextView
+                android:id="@+id/list_item_customui_subtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@string/roboto_light"
+                android:textSize="13sp"
+                android:text="Subtitle"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/list_item_customui_left_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:background="?attr/selectableItemBackground"
+            app:srcCompat="@drawable/ic_person_outline_black_24dp"
+            />
+
+        <RelativeLayout
+            android:id="@+id/list_item_customui_right_icon"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="0dp"
+            android:layout_marginLeft="16dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:background="?attr/selectableItemBackground"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/list_item_customui_right_icon_ui"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                app:srcCompat="@drawable/ic_tv_black_24dp"
+                android:visibility="visible"/>
+
+            <ImageView
+                android:id="@+id/list_item_customui_right_icon_commision"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                app:srcCompat="@drawable/ic_build_black_24dp"
+                android:visibility="gone"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/list_item_customui_click"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_toLeftOf="@+id/list_item_customui_right_icon"
+            android:background="?attr/selectableItemBackground"
+            />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/ctItemBackground" />
+
+</LinearLayout>

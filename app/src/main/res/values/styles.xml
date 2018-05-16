@@ -1,0 +1,36 @@
+<resources>
+
+    <style name="MistTheme" parent="MistTheme.Base"></style>
+
+    <style name="MistTheme.Base" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="colorPrimary">@color/ctPrimary</item>
+        <item name="colorPrimaryDark">@color/ctPrimaryDark</item>
+        <item name="colorAccent">@color/ctAccent</item>
+    </style>
+
+    <style name="BoolSwitch" parent="MistTheme.Base">
+        <!-- active thumb & track color (30% transparency) -->
+        <item name="colorControlActivated">@color/ctPrimaryDark</item>
+
+        <!-- inactive thumb color -->
+        <item name="colorSwitchThumbNormal">@color/ctTextColorSecondary</item>
+
+        <!-- inactive track color (30% transparency) -->
+        <item name="android:colorForeground">@color/ctTextColorSecondary</item>
+    </style>
+
+    <style name="MistTheme.Button" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:textColor">@color/ctTextColorPrimary</item>
+        <item name="colorButtonNormal">@color/ctPrimaryDark</item>
+    </style>
+
+    <style name="AppTheme.Dialog" parent="Theme.AppCompat" /> //example, for use with support-v7
+
+    <style name="MappingsDialog" parent="@style/Theme.AppCompat.Light.Dialog">
+        <!-- This is needed to show title for "select source for endpoint mapping" dialog -->
+        <item name="android:windowNoTitle">false</item>
+    </style>
+
+</resources>

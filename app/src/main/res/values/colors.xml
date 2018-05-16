@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="ctPrimary">#ff8500</color>
+    <color name="ctPrimaryDark">#f07d00</color>
+    <color name="ctAccent">#9f580a</color>
+
+    <color name="ctWindowBackground">#FFFFFF</color>
+    <color name="ctItemBackground">#dfdddd</color>
+    <color name="ctMenuText">#000000</color>
+
+    <color name="ctTextColorPrimary">#ffffff</color>
+    <color name="ctTextColorSecondary">#666363</color>
+    <color name="ctTextColor">#818181</color>
+    <color name="ctTextColorInactive">#dfdddd</color>
+
+</resources>

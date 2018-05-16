@@ -1,0 +1,2 @@
+configurations.maybeCreate("default")
+artifacts.add("default", file('MistApi-v0.6.0-beta-3-3-gdc9d.aar'))

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="fi.ct.mist.mist">
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.pemissions.OVERRIDE_WIFI_CONFIG"/>
+    <uses-feature android:name="android.hardware.wifi" />
+
+    <!-- needed for ACRA debug reporting -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:name="fi.ct.mist.MistApplication"
+        android:theme="@style/MistTheme">
+
+        <activity
+            android:name="fi.ct.mist.main.Main"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="fi.ct.mist.ParseDeepLink"
+            android:label="Mist">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <data
+                    android:scheme="wish"
+                    />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name="fi.ct.mist.connect.Connect"
+            android:configChanges="orientation|screenSize"></activity>
+
+        <activity
+            android:name="fi.ct.mist.system.System"
+            android:configChanges="orientation|screenSize"></activity>
+
+        <activity
+            android:name="fi.ct.mist.system.expert.Expert"
+            android:configChanges="orientation|screenSize"></activity>
+
+        <activity
+            android:name="fi.ct.mist.endpoint.Endpoint"
+            android:configChanges="orientation|screenSize"></activity>
+
+        <activity
+            android:name="fi.ct.mist.system.Tree"
+            android:configChanges="orientation|screenSize"></activity>
+
+        <activity
+            android:name="fi.ct.mist.advanced.Advanced"
+            android:configChanges="orientation|screenSize"></activity>
+
+        <activity
+            android:name="fi.ct.mist.advanced.appsSettings.Settings"
+            android:configChanges="orientation|screenSize"></activity>
+
+        <activity
+            android:name="fi.ct.mist.settings.Settings"
+            android:configChanges="orientation|screenSize"></activity>
+
+        <activity
+            android:name="fi.ct.mist.connect.commissioning.GuidedCommissioning"
+            android:configChanges="orientation|screenSize"></activity>
+
+        <activity
+            android:name="fi.ct.mist.sandbox.CustomWebView"
+            android:configChanges="orientation|screenSize">
+        </activity>
+
+        <activity
+            android:name="fi.ct.mist.connect.commissioning.ManualCommissioning"
+            android:configChanges="orientation|screenSize">
+        </activity>
+
+        <service android:name="fi.ct.mist.sandbox.Sandbox"
+                 android:enabled="true"
+                 android:exported="true"
+                 android:stopWithTask="false">
+            <intent-filter>
+                <action android:name="fi.ct.mist.sandbox.Sandbox"></action>
+            </intent-filter>
+        </service>
+
+
+        <receiver android:name="fi.ct.mist.Autostart"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="fi.ct.mist.NotificationService"
+            android:exported="false"
+            android:stopWithTask="false"></service>
+
+    </application>
+
+</manifest>

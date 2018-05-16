@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:animateLayoutChanges="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="vertical"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp">
+
+            <TextView
+                android:id="@+id/list_item_expandable_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Title"
+                android:textSize="16sp" />
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/list_item_expandable_right_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="16dp"
+            android:background="?attr/selectableItemBackground"
+            app:srcCompat="@drawable/ic_expand_more_black_24dp" />
+
+        <TextView
+            android:id="@+id/list_item_expandable_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/list_item_expandable_right_icon"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="16dp"
+            android:minWidth="16dp"
+            android:textSize="12sp"
+           />
+
+        <TextView
+            android:id="@+id/list_item_expandable_value_not_write"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="21dp"
+            android:minWidth="16dp"
+            android:textSize="12sp"
+            android:visibility="invisible"
+            />
+
+        <RelativeLayout
+            android:id="@+id/list_item_expandable_click"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_toLeftOf="@+id/list_item_expandable_value"
+            android:background="?attr/selectableItemBackground"/>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/list_item_expandable_expand_area"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:visibility="gone"
+        >
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/ctItemBackground" />
+
+</LinearLayout>

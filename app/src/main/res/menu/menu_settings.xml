@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <item
+        android:id="@+id/settings_settings"
+        android:orderInCategory="200"
+        android:title="@string/settings_menu_settings"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/settings_advanced"
+        android:orderInCategory="201"
+        android:title="@string/settings_menu_advanced" />
+    <item
+        android:id="@+id/settings_about"
+        android:orderInCategory="202"
+        android:title="@string/settings_menu_about" />
+    <item
+        android:id="@+id/settings_license"
+        android:orderInCategory="202"
+        android:title="@string/settings_menu_license" />
+</menu>
